@@ -4,8 +4,12 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.spri
 xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
   
   <bean id="CountryBean" class="com.godpaper.javapostsforlearning.Country">  
-      <property name="countryName" value="India"/>  
+      <!--  <property name="countryName" value="India"/>  
       <property name="capital" ref="CapitalBean"/>  
+      -->
+      <constructor-arg index="0" type="java.lang.String" value="India"></constructor-arg>
+      <constructor-arg index="1" ref="CapitalBean"></constructor-arg>
+      
   </bean>  
   <bean id="CapitalBean" class="com.godpaper.javapostsforlearning.Capital">  
       <property name="capitalName" value="Delhi"/>  

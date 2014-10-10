@@ -20,7 +20,7 @@ public class ApplicationContextMain {
 	public static void main(String[] args) {
 		ApplicationContext appContext = new ClassPathXmlApplicationContext("/main/resources/ApplicationContext.xml");  
 		  Country countryObj = (Country) appContext.getBean("country");  
-		  System.out.println("Capital Name:"+countryObj.getCapitalName("capital"));
+//		  System.out.println("Capital Name:"+countryObj.getCapitalName("capital"));
 	}
 
 }

@@ -1,14 +1,10 @@
 package com.godpaper.javapostsforlearning;
 
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 
 public class Country {
 	
 	String countryName ;  
-	 ApplicationContext applicationContext;  
-	 Capital capital;  
+	
 	 public String getCountryName() {  
 	  return countryName;  
 	 }  
@@ -19,16 +15,14 @@ public class Country {
 	 }  
 	  
 	  
-	 public void setApplicationContext(ApplicationContext applicationContext)  
-	   throws BeansException {  
-	  this.applicationContext=applicationContext;  
-	 }  
-	   
-	 public String getCapitalName(String capitalBeanName)  
+	 public void init()  
 	 {  
-	  capital=(Capital) applicationContext.getBean(capitalBeanName);  
-	  String capitalName=capital.getCapitalName();  
-	  return capitalName;  
-	 }
+	  System.out.println("In init block of country");  
+	 }  
+	  
+	 public void destroy()  
+	 {  
+	  System.out.println("In destroy block of country");  
+	 }  
 
 }

@@ -22,8 +22,8 @@ public class ConstructorDIMain {
 		
 		Country countryObj = (Country)appContext.getBean("CountryBean");
 		String countryName = countryObj.getCountryName();
-		String capitalName = countryObj.getCapital().getCapitalName();
-		System.out.println(capitalName+" is capital of"+countryName);
+//		String capitalName = countryObj.getCapital().getCapitalName();
+//		System.out.println(capitalName+" is capital of"+countryName);
 	}
 
 }

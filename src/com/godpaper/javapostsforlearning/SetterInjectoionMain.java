@@ -20,8 +20,8 @@ public class SetterInjectoionMain {
 		ApplicationContext appContext = new ClassPathXmlApplicationContext("/main/resources/ApplicationContext.xml");
 		Country countryObj = (Country)appContext.getBean("CountryBean");
 		String countryName = countryObj.getCountryName();
-		String capitalName = countryObj.getCapital().getCapitalName();
-		System.out.println(capitalName+" is capital of "+countryName);
+//		String capitalName = countryObj.getCapital().getCapitalName();
+//		System.out.println(capitalName+" is capital of "+countryName);
 	}
 
 }

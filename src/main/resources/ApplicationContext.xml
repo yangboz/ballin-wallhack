@@ -2,11 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"  
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"  
 xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
-<bean id="country" class="com.godpaper.javapostsforlearning.Country" autowire="byName">  
-  <property name="countryName" value="India"/>  
+<bean id="personBean" class="com.godpaper.javapostsforlearning.Person">  
+  <property name="name" value="Godpaper"/>  
  </bean>  
- <bean id="capital" class="com.godpaper.javapostsforlearning.Capital">  
-  <property name="capitalName" value="Delhi" />  
+ <bean id="employeeBean" class="com.godpaper.javapostsforlearning.Employee" parent="personBean">  
+  <property name="employeeNumber" value="1234567" />  
  </bean>
-
 </beans>  

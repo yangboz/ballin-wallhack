@@ -63,5 +63,9 @@
 	<classpathentry kind="lib" path="jars/spring-websocket-4.1.1.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="jars/spring-websocket-4.1.1.RELEASE.jar"/>
 	<classpathentry kind="lib" path="jars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="jars/ibatis-2.3.0.677.jar"/>
+	<classpathentry kind="lib" path="jars/ibatis-dao-2.jar"/>
+	<classpathentry kind="lib" path="jars/ibatis-sqlmap-2.jar"/>
+	<classpathentry kind="lib" path="jars/mysql-connector-java-5.1.18.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

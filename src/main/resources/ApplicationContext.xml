@@ -14,6 +14,16 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
       <property name="capitalName" value="Delhi"/>  
   </bean>  
   -->
-  <bean id="country" class="com.godpaper.javapostsforlearning.Country" scope="prototype">  
+  <bean id="CountryBean" class="com.godpaper.javapostsforlearning.Country" scope="prototype">  
+      <property name="listOfStates">  
+	   <list>  
+	    <value>Maharastra</value>  
+	    <value>Madhya Pradesh</value>  
+	    <value>Rajasthan</value>  
+	   </list>  
+	  
+	  </property>  
+
  </bean> 
+ 
 </beans>  

@@ -4,27 +4,18 @@ import java.lang.String;
 
 public class Country {
 	String countryName;  
-    List<String> listOfStates;  
+    Capital capital;  
     public String getCountryName() {  
         return countryName;  
     }  
     public void setCountryName(String countryName) {  
         this.countryName = countryName;  
     }  
-    public List<String> getListOfStates() {  
-        return listOfStates;  
+    public Capital getCapital() {  
+        return capital;  
     }  
-    public void setListOfStates(List<String> listOfStates) {  
-        this.listOfStates = listOfStates;  
-    }  
-     
-    public void printListOfStates()  
-    {  
-        System.out.println("Some of states in india are:");  
-        for(String state:listOfStates)  
-        {  
-            System.out.println(state);  
-        }  
+    public void setCapital(Capital capital) {  
+        this.capital = capital;  
     }  
 
 }

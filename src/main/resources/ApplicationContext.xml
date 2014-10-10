@@ -2,28 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"  
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"  
 xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
-  <!--  
-  <bean id="CountryBean" class="com.godpaper.javapostsforlearning.Country">  
-      <property name="countryName" value="India"/>  
-      <property name="capital" ref="CapitalBean"/>  
-      <constructor-arg index="0" type="java.lang.String" value="India"></constructor-arg>
-      <constructor-arg index="1" ref="CapitalBean"></constructor-arg>
-      
-  </bean>  
-  <bean id="CapitalBean" class="com.godpaper.javapostsforlearning.Capital">  
-      <property name="capitalName" value="Delhi"/>  
-  </bean>  
-  -->
-  <bean id="CountryBean" class="com.godpaper.javapostsforlearning.Country" scope="prototype">  
-      <property name="listOfStates">  
-	   <list>  
-	    <value>Maharastra</value>  
-	    <value>Madhya Pradesh</value>  
-	    <value>Rajasthan</value>  
-	   </list>  
-	  
-	  </property>  
+<bean id="country" class="com.godpaper.javapostsforlearning.Country" autowire="byName">  
+  <property name="countryName" value="India"/>  
+ </bean>  
+ <bean id="capital" class="com.godpaper.javapostsforlearning.Capital">  
+  <property name="capitalName" value="Delhi" />  
+ </bean>
 
- </bean> 
- 
 </beans>  
